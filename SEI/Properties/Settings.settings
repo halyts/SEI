@@ -1,0 +1,111 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SEI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OraclePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Qw123456</Value>
+    </Setting>
+    <Setting Name="OracleSchema" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SIEBEL</Value>
+    </Setting>
+    <Setting Name="SiebelLogin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SEI_TECH_USER</Value>
+    </Setting>
+    <Setting Name="LogSeverity" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="ExchangeLogin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">tech_siebel_ssseadm</Value>
+    </Setting>
+    <Setting Name="ExchangePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">QW123456</Value>
+    </Setting>
+    <Setting Name="ExchangeDomain" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">crmsbrf.ua</Value>
+    </Setting>
+    <Setting Name="ExchangeService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://mail.crmsbrf.ua/EWS/Exchange.asmx</Value>
+    </Setting>
+    <Setting Name="uOraclePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="uExchangePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="uSiebelPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="uOracleConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MinPoolSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="MaxPoolSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="LDAPAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LDAP://crmsbrf.ua/DC=crmsbrf,DC=ua</Value>
+    </Setting>
+    <Setting Name="DecrPoolSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="IncrPoolSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ConnectionTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="ConnectionLifeTime" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="uOracleConnectionStringS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DecrPoolSizeS" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="IncrPoolSizeS" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ConnectionTimeoutS" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="ConnectionLifeTimeS" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="MinPoolSizeS" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MaxPoolSizeS" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="SiebelWSDeleteTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="SiebelWSTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="ExchangeWSTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="TimeSEIUsersSync" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OracleLogin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SEI_TECH_USER</Value>
+    </Setting>
+    <Setting Name="OracleTNS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CRMPSI</Value>
+    </Setting>
+    <Setting Name="SiebelPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Qw123456</Value>
+    </Setting>
+    <Setting Name="SyncPeriod" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="LogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\SEILog</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

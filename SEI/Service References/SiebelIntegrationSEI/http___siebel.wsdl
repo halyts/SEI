@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsdLocal2="http://siebel.com/marketing/IntegrationSEI" xmlns:xsdLocal1="http://www.siebel.com/xml/SEI%20User" xmlns:xsdLocal0="http://www.siebel.com/xml/SEI%20AppointmentExchangeOut" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://siebel.com/marketing/IntegrationSEI" targetNamespace="http://siebel.com/marketing/IntegrationSEI" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema xmlns:xsdLocal2="http://siebel.com/marketing/IntegrationSEI" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://siebel.com/marketing/IntegrationSEI">
+      <xsd:annotation>
+        <xsd:documentation>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation>
+      </xsd:annotation>
+      <xsd:element name="Appointment" type="tns:Appointment" />
+      <xsd:complexType name="AppointmentTopElmt">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Appointment" type="tns:Appointment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Appointment">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="AdjacentMeetingCount" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AdjacentMeetings" type="tns:AdjacentMeetings" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AllowNewTimeProposal" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AppointmentReplyTime" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AppointmentSequenceNumber" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AppointmentState" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AppointmentType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ArchiveTag" type="tns:ArchiveTag" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Attachments" type="tns:Attachments" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Body" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Categories" type="tns:Categories" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ConferenceType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ConflictingMeetingCount" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="ConflictingMeetings" type="tns:ConflictingMeetings" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ConversationId" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Culture" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DateTimeCreated" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DateTimeReceived" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DateTimeSent" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="DeletedOccurrences" type="tns:DeletedOccurrences" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DisplayCc" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DisplayTo" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Duration" type="tns:Duration" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="End" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="EndTimeZone" type="tns:EndTimeZone" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="EnhancedLocation" type="tns:EnhancedLocation" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="EntityExtractionResult" type="tns:EntityExtractionResult" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="ExtendedProperties" type="tns:ExtendedProperties" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="FirstOccurrence" type="tns:FirstOccurrence" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Flag" type="tns:Flag" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ICalDateTimeStamp" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ICalRecurrenceId" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ICalUid" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IconIndex" type="tns:IconIndex" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Id" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Importance" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="InReplyTo" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="InstanceKey" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="InternetMessageHeaders" type="tns:InternetMessageHeaders" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsAllDayEvent" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsAssociated" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsAttachment" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsCancelled" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsDirty" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsDraft" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsFromMe" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsMeeting" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsNew" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsOnlineMeeting" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsRecurring" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsReminderSet" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsResend" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsResponseRequested" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsSubmitted" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsUnmodified" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ItemClass" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="JoinOnlineMeetingUrl" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LastModifiedName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LastModifiedTime" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="LastOccurrence" type="tns:LastOccurrence" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LegacyFreeBusyStatus" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Location" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MeetingRequestWasSent" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MeetingWorkspaceUrl" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="MimeContent" type="tns:MimeContent" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="ModifiedOccurrences" type="tns:ModifiedOccurrences" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MyResponseType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NetShowUrl" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NormalizedBody" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="OnlineMeetingSettings" type="tns:OnlineMeetingSettings" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="OptionalAttendees" type="tns:OptionalAttendees" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Organizer" type="tns:Organizer" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="OriginalStart" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ParentFolderId" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PolicyTag" type="tns:PolicyTag" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Preview" type="tns:Preview" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Recurrence" type="tns:Recurrence" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ReminderDueBy" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ReminderMinutesBeforeStart" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="RequiredAttendees" type="tns:RequiredAttendees" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Resources" type="tns:Resources" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RetentionDate" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Schema" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Sensitivity" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Size" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Start" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="StartTimeZone" type="tns:StartTimeZone" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="StoreEntryId" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Subject" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TextBody" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TimeZone" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="UniqueBody" type="tns:UniqueBody" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebClientEditFormQueryString" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebClientReadFormQueryString" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="When" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AllowedResponseActions" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="EffectiveRights" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsOrganized" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LocalId" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RequestorId" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RequestorLogin" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AdjacentMeetings" />
+      <xsd:complexType name="ArchiveTag" />
+      <xsd:complexType name="Attachments" />
+      <xsd:complexType name="Categories">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Category" type="tns:Category" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ConflictingMeetings" />
+      <xsd:complexType name="DeletedOccurrences" />
+      <xsd:complexType name="Duration">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Days" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Hours" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Minutes" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Seconds" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Milliseconds" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="EndTimeZone">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Offset" type="tns:Offset" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="EnhancedLocation" />
+      <xsd:complexType name="EntityExtractionResult" />
+      <xsd:complexType name="ExtendedProperties">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ExtendedProperty" type="tns:ExtendedProperty" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="FirstOccurrence" />
+      <xsd:complexType name="Flag" />
+      <xsd:complexType name="IconIndex" />
+      <xsd:complexType name="InternetMessageHeaders" />
+      <xsd:complexType name="LastOccurrence" />
+      <xsd:complexType name="MimeContent">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="StringElement" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ModifiedOccurrences" />
+      <xsd:complexType name="OnlineMeetingSettings" />
+      <xsd:complexType name="OptionalAttendees">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Attendee" type="tns:Attendee" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Organizer">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Address" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Id" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MailboxType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RoutingType" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PolicyTag" />
+      <xsd:complexType name="Preview" />
+      <xsd:complexType name="Recurrence" />
+      <xsd:complexType name="RequiredAttendees">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Attendee" type="tns:Attendee" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Resources">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Attendee" type="tns:Attendee" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="StartTimeZone">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Offset" type="tns:Offset" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UniqueBody">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="BodyType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsTruncated" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Text" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Category">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Value" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Offset">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Days" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Hours" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Minutes" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Seconds" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Milliseconds" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExtendedProperty" />
+      <xsd:complexType name="Attendee">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Address" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Id" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MailboxType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RoutingType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ResponseType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LastResponseTime" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Attendee">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Address" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Id" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MailboxType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RoutingType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ResponseType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LastResponseTime" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Attendee">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Address" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Id" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MailboxType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RoutingType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ResponseType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LastResponseTime" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Offset">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Days" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Hours" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Minutes" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Seconds" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Milliseconds" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.siebel.com/xml/SEI%20AppointmentExchangeOut">
+      <xsd:annotation>
+        <xsd:documentation>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation>
+      </xsd:annotation>
+      <xsd:element name="Appointment" type="xsdLocal0:Appointment" />
+      <xsd:complexType name="AppointmentTopElmt">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Appointment" type="xsdLocal0:Appointment" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Appointment">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ErrorText" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="SiebelId" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.siebel.com/xml/SEI%20User">
+      <xsd:annotation>
+        <xsd:documentation>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation>
+      </xsd:annotation>
+      <xsd:element name="SEIUserOutput" type="xsdLocal1:SEIUserOutput" />
+      <xsd:complexType name="SEIUserOutputTopElmt">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="SEIUserOutput" type="xsdLocal1:SEIUserOutput" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SEIUserOutput">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ErrorText" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </types>
+  <message name="DeleteAppointment_Input">
+    <part name="ExchangeId" type="xsd:string" />
+    <part name="SiebelId" type="xsd:string" />
+  </message>
+  <message name="DeleteAppointment_Output">
+    <part name="DeleteAppointmentOut" type="xsdLocal0:AppointmentTopElmt" />
+  </message>
+  <message name="InsertSEIUser_Input">
+    <part name="pUserid" type="xsd:string" />
+    <part name="pEmail" type="xsd:string" />
+  </message>
+  <message name="InsertSEIUser_Output">
+    <part name="SEIUserOut" type="xsdLocal1:SEIUserOutputTopElmt" />
+  </message>
+  <message name="DeleteSEIUser_Input">
+    <part name="pUserid" type="xsd:string" />
+  </message>
+  <message name="DeleteSEIUser_Output">
+    <part name="SEIUserOut" type="xsdLocal1:SEIUserOutputTopElmt" />
+  </message>
+  <message name="ChangeActStatus_Input">
+    <part name="pActionId" type="xsd:string" />
+    <part name="pNewStatus" type="xsd:string" />
+  </message>
+  <message name="ChangeActStatus_Output">
+    <part name="SEIUserOut" type="xsdLocal1:SEIUserOutputTopElmt" />
+  </message>
+  <message name="NewAppointment_Input">
+    <part name="ExchangeAppointmentIn" type="tns:AppointmentTopElmt" />
+  </message>
+  <message name="NewAppointment_Output">
+    <part name="ExchangeAppointmentOut" type="xsdLocal0:AppointmentTopElmt" />
+  </message>
+  <portType name="SEI_spcIntegration_spcExchange">
+    <operation name="DeleteAppointment">
+      <input message="tns:DeleteAppointment_Input" />
+      <output message="tns:DeleteAppointment_Output" />
+    </operation>
+    <operation name="InsertSEIUser">
+      <input message="tns:InsertSEIUser_Input" />
+      <output message="tns:InsertSEIUser_Output" />
+    </operation>
+    <operation name="DeleteSEIUser">
+      <input message="tns:DeleteSEIUser_Input" />
+      <output message="tns:DeleteSEIUser_Output" />
+    </operation>
+    <operation name="ChangeActStatus">
+      <input message="tns:ChangeActStatus_Input" />
+      <output message="tns:ChangeActStatus_Output" />
+    </operation>
+    <operation name="NewAppointment">
+      <input message="tns:NewAppointment_Input" />
+      <output message="tns:NewAppointment_Output" />
+    </operation>
+  </portType>
+  <binding name="SEI_spcIntegration_spcExchange" type="tns:SEI_spcIntegration_spcExchange">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="DeleteAppointment">
+      <soap:operation soapAction="rpc/http://siebel.com/marketing/IntegrationSEI:DeleteAppointment" />
+      <input>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </output>
+    </operation>
+    <operation name="InsertSEIUser">
+      <soap:operation soapAction="rpc/http://siebel.com/marketing/IntegrationSEI:InsertSEIUser" />
+      <input>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </output>
+    </operation>
+    <operation name="DeleteSEIUser">
+      <soap:operation soapAction="rpc/http://siebel.com/marketing/IntegrationSEI:DeleteSEIUser" />
+      <input>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </output>
+    </operation>
+    <operation name="ChangeActStatus">
+      <soap:operation soapAction="rpc/http://siebel.com/marketing/IntegrationSEI:ChangeActStatus" />
+      <input>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </output>
+    </operation>
+    <operation name="NewAppointment">
+      <soap:operation soapAction="rpc/http://siebel.com/marketing/IntegrationSEI:NewAppointment" />
+      <input>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://siebel.com/marketing/IntegrationSEI" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SEI_spcIntegration_spcExchange">
+    <port name="SEI_spcIntegration_spcExchange" binding="tns:SEI_spcIntegration_spcExchange">
+      <soap:address location="https://crmpsi.sbrf.ua.loc:8443/eai_anon_rus/start.swe?SWEExtSource=SecureWebService&amp;SWEExtCmd=Execute" />
+    </port>
+  </service>
+</definitions>
